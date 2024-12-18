@@ -8,3 +8,8 @@ El objetivo principal del proyecto es demostrar habilidades clave en desarrollo 
 - Uso de HTML y CSS para crear una interfaz atractiva y funcional.
 - Implementación de buenas prácticas de codificación y organización de un proyecto, en este caso para un negocio ficticio.
 - Este proyecto pone en práctica los principios fundamentales de diseño web, esto permite mostrar cierta creatividad y atención al detalle en la presentación de un negocio ficticio.
+
+## Habilidades
+- HTML
+- CSS
+- Github
