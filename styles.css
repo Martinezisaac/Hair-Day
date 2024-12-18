@@ -41,7 +41,7 @@ a:hover {
 }
 
 .articulo_principal {
-    background: linear-gradient(to bottom, rgb(0 0 0/ 0.75), rgb(0 0 0/ .25)), url(/media/Salon.jpeg);
+    background: linear-gradient(to bottom, rgb(0 0 0/ 0.75), rgb(0 0 0/ .25)), url(media/Salon.jpeg);
     background-position: center;
     background-size: cover;
     justify-content: center;
