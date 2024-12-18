@@ -1,0 +1,198 @@
+body {
+    margin-top: 9rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.navbar a {
+    padding: 10px;
+    text-align: center;
+    
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+a:hover {  
+    transition: 0.3s;
+    background-color: #cbb5a4; 
+}
+
+.navbar a:not(:hover) {
+    transition: 0.3s;
+    background-color: #d0604c;
+}
+
+.seccion_principal {
+    margin-top: 3rem;
+}
+
+.articulo_principal {
+    background: linear-gradient(to bottom, rgb(0 0 0/ 0.75), rgb(0 0 0/ .25)), url(/media/Salon.jpeg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    width: 100%;
+    height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.articulo_principal p {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+}
+
+.seccion_secundaria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-top: 3rem;
+}
+
+.seccion_secundaria article {
+    background-color: #d0604c;
+}
+
+.seccion_secundaria h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: left;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    font-weight: 400;
+    color: white;
+}
+
+.seccion_secundaria p {
+    padding: 1.5rem;
+    text-align: justify;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.seccion_secundaria img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.articulo_principal:hover, .articulo1:hover, .articulo2:hover, .articulo3:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.articulo_principal:not(:hover), .articulo1:not(:hover), .articulo2:not(:hover), .articulo3:not(:hover) {
+    transform: scale(1.00); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.0); 
+    transition: 0.3s;
+}
+
+footer {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3rem;
+}
+
+footer img {
+    padding-top: 3rem;
+    width: 100px;
+    height: 100px;
+}
+
+footer p {
+    padding-top: 3rem;
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin: 5rem;
+    }
+
+    .navbar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seccion_secundaria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seccion_secundaria h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .seccion_secundaria p {
+        font-size: 1.4rem;
+    }
+
+    .articulo_principal {
+        height: 50vh;
+    }
+
+    .articulo_principal p {
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 2rem;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .seccion_secundaria {
+        grid-template-columns: 1fr; 
+        gap: 2rem; 
+    }
+
+    .seccion_secundaria h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .seccion_secundaria p {
+        font-size: 1.2rem;
+    }
+
+    .articulo_principal {
+        height: 40vh;
+    }
+
+    .articulo_principal p {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
